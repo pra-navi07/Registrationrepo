@@ -1,69 +1,78 @@
-&lt;html&gt;
-&lt;head&gt;
-&lt;link href=&quot;register.css&quot; rel=&quot;stylesheet&quot; /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h1&gt; DevOps Lab&lt;/h1&gt;
-&lt;h2&gt; Student Registration Form&lt;/h1&gt;
-&lt;form&gt;
-&lt;table border=&quot;5&quot; align=&quot;center&quot; cellspacing=&quot;10&quot; cellpadding=&quot;10&quot; &gt;
-&lt;tr&gt;
-&lt;td&gt;Name&lt;/td&gt;&lt;td&gt;&lt;input type=&quot;text&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Contact Number&lt;/td&gt;
-&lt;td&gt;&lt;input type=&quot;text&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Gender&lt;/td&gt;
-&lt;td&gt;&lt;input type=&quot;radio&quot; name=&quot;g&quot;&gt;Male
-&lt;input type=&quot;radio&quot; name=&quot;g&quot;&gt;Female&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Address&lt;/td&gt;
-&lt;td&gt;&lt;textarea rows=&quot;5&quot; cols=&quot;15&quot;&gt;&lt;/textarea&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Hobbies&lt;/td&gt;
-&lt;td&gt;&lt;input type=&quot;checkbox&quot;&gt;Singing
-&lt;input type=&quot;checkbox&quot;&gt;Travelling
-&lt;input type=&quot;checkbox&quot;&gt;Reading novels
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Skillset&lt;/td&gt;
-&lt;td&gt;&lt;input type=&quot;checkbox&quot;&gt;C
-&lt;input type=&quot;checkbox&quot;&gt;Python
-&lt;input type=&quot;checkbox&quot;&gt;Java
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Highest Qualification&lt;/td&gt;
-
-
-&lt;td&gt;&lt;select&gt;
-&lt;option&gt;&lt;--SELECT--&gt;&lt;/option&gt;
-&lt;option&gt;Ph.D&lt;/option&gt;
-&lt;option&gt;M.E/M.Tech&lt;/option&gt;
-&lt;option&gt;B.E/B.Tech&lt;/option&gt;
-&lt;option&gt;Diploma&lt;/option&gt;
-&lt;option&gt;Inter&lt;/option&gt;
-&lt;option&gt;SSC&lt;/option&gt;
-&lt;/select&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;td&gt;District&lt;/td&gt;
-&lt;td&gt;&lt;select&gt;
-&lt;option&gt;--SELECT--&gt;&lt;/option&gt;
-&lt;option&gt;Adilabad&lt;/option&gt;
-&lt;option&gt;Zaheerabad&lt;/option&gt;
-&lt;/select&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;input type=&quot;submit&quot; value=&quot;Register&quot;&gt;&lt;/td&gt;
-&lt;td&gt;&lt;input type=&quot;reset&quot; value=&quot;Clear&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="register.css" rel="stylesheet" />
+  <title>DevOps Lab - Student Registration Form</title>
+</head>
+<body>
+  <h1>DevOps Lab</h1>
+  <h2>Student Registration Form</h2>
+  <form>
+    <table border="5" align="center" cellspacing="10" cellpadding="10">
+      <tr>
+        <td>Name</td>
+        <td><input type="text" name="name" /></td>
+      </tr>
+      <tr>
+        <td>Contact Number</td>
+        <td><input type="text" name="contact" /></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input type="radio" name="gender" value="Male" /> Male
+          <input type="radio" name="gender" value="Female" /> Female
+        </td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><textarea rows="5" cols="15" name="address"></textarea></td>
+      </tr>
+      <tr>
+        <td>Hobbies</td>
+        <td>
+          <input type="checkbox" name="hobbies" value="Singing" /> Singing
+          <input type="checkbox" name="hobbies" value="Travelling" /> Travelling
+          <input type="checkbox" name="hobbies" value="Reading novels" /> Reading novels
+        </td>
+      </tr>
+      <tr>
+        <td>Skillset</td>
+        <td>
+          <input type="checkbox" name="skillset" value="C" /> C
+          <input type="checkbox" name="skillset" value="Python" /> Python
+          <input type="checkbox" name="skillset" value="Java" /> Java
+        </td>
+      </tr>
+      <tr>
+        <td>Highest Qualification</td>
+        <td>
+          <select name="qualification">
+            <option value="">--SELECT--</option>
+            <option value="Ph.D">Ph.D</option>
+            <option value="M.E/M.Tech">M.E/M.Tech</option>
+            <option value="B.E/B.Tech">B.E/B.Tech</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Inter">Inter</option>
+            <option value="SSC">SSC</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>District</td>
+        <td>
+          <select name="district">
+            <option value="">--SELECT--</option>
+            <option value="Adilabad">Adilabad</option>
+            <option value="Zaheerabad">Zaheerabad</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Register" /></td>
+        <td><input type="reset" value="Clear" /></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
